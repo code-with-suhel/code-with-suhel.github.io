@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohd Suhel Ansari | Data Scientist, ML Engineer Portfolio</title>
+    <!-- Load Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font family -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Light theme background and dark text color */
+            background-color: #f7f7f7; 
+            color: #1f2937; 
+        }
+        /* Custom class for the hero section background to create distinction */
+        .hero-bg {
+            background-color: #ffffff; /* White background */
+        }
+    </style>
+    <!-- Load Font Awesome for icons (social media, skills) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation (Light Theme) -->
+    <header class="sticky top-0 z-10 bg-white/95 backdrop-blur-sm shadow-xl border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-cyan-500">
+                Mohd Suhel Ansari
+            </h1>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
+                <a href="#about" class="hover:text-cyan-500 transition duration-300">About</a>
+                <a href="#skills" class="hover:text-cyan-500 transition duration-300">Skills</a>
+                <a href="#projects" class="hover:text-cyan-500 transition duration-300">Projects</a>
+                <a href="#contact" class="hover:text-cyan-500 transition duration-300">Contact</a>
+            </nav>
+            <a href="https://github.com/suhelansari123-cmd" target="_blank" class="bg-cyan-600 hover:bg-cyan-700 text-white py-2 px-4 rounded-lg text-sm font-semibold transition duration-300 shadow-md hidden sm:block">
+                GitHub
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero/About Section (White Background) -->
+    <!-- Padding reduced from py-16 md:py-24 to py-12 md:py-16 -->
+    <section id="about" class="py-12 md:py-16 hero-bg border-b border-gray-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-10">
+            <!-- Profile Image (Left) -->
+            <div class="w-48 h-48 md:w-56 md:h-56 flex-shrink-0 rounded-full overflow-hidden border-4 border-cyan-500 shadow-xl">
+                <!-- IMPORTANT: Replace the 'src' URL below with your actual professional photo link. -->
+                <img 
+                    src="https://placehold.co/800x800/22d3ee/ffffff?text=MSA" 
+                    alt="Mohd Suhel Ansari Professional Photo" 
+                    class="object-cover w-full h-full"
+                    onerror="this.onerror=null; this.src='https://placehold.co/800x800/22d3ee/ffffff?text=MSA';"
+                >
+            </div>
+
+            <!-- Text Content (Right) -->
+            <div class="md:text-left text-center">
+                <h2 class="text-5xl md:text-6xl font-extrabold leading-tight text-gray-900 mb-2">
+                    Hi, I'm <span class="text-cyan-500">Mohd Suhel Ansari.</span>
+                </h2>
+                <p class="text-gray-700 text-lg mb-4 max-w-xl md:max-w-none">
+                    <strong class="text-gray-900">Data Scientist, ML Engineer</strong> specializing in leveraging **Machine Learning** and **Statistical Modeling** to deliver actionable business intelligence.
+                </p>
+
+                <!-- Social Links (View Resume button removed from here) -->
+                <div class="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 text-md font-medium text-gray-500">
+                    <a href="https://github.com/suhelansari123-cmd" target="_blank" class="hover:text-cyan-500 transition duration-300 flex items-center gap-1">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <!-- LinkedIn Link Updated -->
+                    <a href="https://www.linkedin.com/in/suhel-ansari-bb7835339/" target="_blank" class="hover:text-cyan-500 transition duration-300 flex items-center gap-1">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <!-- Corrected Instagram Link and Display Name -->
+                    <a href="https://instagram.com/suhelsalafi" target="_blank" class="hover:text-cyan-500 transition duration-300 flex items-center gap-1">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                    <!-- New Blogger Link -->
+                    <a href="https://www.blogger.com/blog/posts/4848763776789459053" target="_blank" class="hover:text-cyan-500 transition duration-300 flex items-center gap-1">
+                        <i class="fab fa-blogger-b"></i> Blogger
+                    </a>
+                    <!-- Updated Email Link -->
+                    <a href="mailto:suhelansari95577@gmail.com" class="hover:text-cyan-500 transition duration-300 flex items-center gap-1">
+                        <i class="fas fa-envelope"></i> suhelansari95577@gmail.com
+                    </a>
+                    <!-- WhatsApp Link -->
+                    <a href="https://wa.me/919557716913" target="_blank" class="hover:text-cyan-500 transition duration-300 flex items-center gap-1">
+                        <i class="fab fa-whatsapp"></i> 9557716913
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Technology Section (White Cards) -->
+    <!-- Padding reduced from py-12 md:py-16 to py-8 md:py-12 -->
+    <section id="skills" class="py-8 md:py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">
+                Technical Skills
+            </h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+                <!-- Skill Card 1: Programming & Core (UPDATED) -->
+                <div class="bg-white p-8 rounded-xl shadow-xl border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-cyan-500 mb-4 flex items-center gap-3">
+                        <i class="fas fa-code"></i> Programming & Core
+                    </h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><span class="text-cyan-500 mr-2">&bull;</span> Python (Pandas, NumPy)</li>
+                        <li><span class="text-cyan-500 mr-2">&bull;</span> SQL (PostgreSQL, MySQL)</li>
+                        <!-- C/C++ -->
+                        <li><span class="text-cyan-500 mr-2">&bull;</span> C and C++</li> 
+                        <!-- HTML/CSS/JS -->
+                        <li><span class="text-cyan-500 mr-2">&bull;</span> HTML, CSS and JavaScript</li> 
+                        <li><span class="text-cyan-500 mr-2">&bull;</span> Data Wrangling & ETL</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Card 2: Modeling & ML -->
+                <div class="bg-white p-8 rounded-xl shadow-xl border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-cyan-500 mb-4 flex items-center gap-3">
+                        <i class="fas fa-brain"></i> Modeling & ML
+                    </h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><span class="text-cyan-500 mr-2">&bull;</span> Scikit-learn, XGBoost</li>
+                        <li><span class="text-cyan-500 mr-2">&bull;</span> Deep Learning (TensorFlow/PyTorch)</li>
+                        <li><span class="text-cyan-500 mr-2">&bull;</span> NLP (BERT, spaCy)</li>
+                        <li><span class="text-cyan-500 mr-2">&bull;</span> Time Series Forecasting</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Card 3: Tools & Deployment -->
+                <div class="bg-white p-8 rounded-xl shadow-xl border border-gray-200">
+                    <h3 class="text-2xl font-semibold text-cyan-500 mb-4 flex items-center gap-3">
+                        <i class="fas fa-wrench"></i> Tools & Deployment
+                    </h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><span class="text-cyan-500 mr-2">&bull;</span> Git & GitHub (Version Control)</li>
+                        <li><span class="text-cyan-500 mr-2">&bull;</span> Docker & Basic CI/CD</li>
+                        <li><span class="text-cyan-500 mr-2">&bull;</span> Visualization (Matplotlib, Tableau)</li>
+                        <li><span class="text-cyan-500 mr-2">&bull;</span> AWS/GCP Basics</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section (Light Gray Background) -->
+    <!-- Padding reduced from py-12 md:py-16 to py-8 md:py-12 -->
+    <section id="projects" class="py-8 md:py-12 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-900">
+                Featured Data Science Projects
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Project Card 1: Predictive Modeling -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-xl border border-gray-200 transform hover:scale-[1.02] transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-cyan-500 mb-3">
+                            Predictive Churn Model for E-commerce
+                        </h3>
+                        <p class="text-sm text-gray-500 mb-4">
+                            #Classification #FeatureEngineering #XGBoost
+                        </p>
+                        <p class="text-gray-700 mb-6">
+                            Developed an XGBoost classifier to predict customer churn with 92% AUC. Involved extensive feature engineering from transactional and demographic data, resulting in a deployable model.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/suhelansari123-cmd/project1-repo" target="_blank" class="text-sm font-semibold text-white bg-gray-700 hover:bg-cyan-600 py-2 px-4 rounded-lg transition duration-300">
+                                View Code (GitHub)
+                            </a>
+                            <a href="link-to-live-demo-or-kaggle-notebook.html" target="_blank" class="text-sm font-semibold text-cyan-500 border border-cyan-500 hover:bg-cyan-50 py-2 px-4 rounded-lg transition duration-300">
+                                Case Study/Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: NLP/LLM Application -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-xl border border-gray-200 transform hover:scale-[1.02] transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-cyan-500 mb-3">
+                            Sentiment Analysis of Financial News
+                        </h3>
+                        <p class="text-sm text-gray-500 mb-4">
+                            #NLP #Transformers #BERT #Visualization
+                        </p>
+                        <p class="text-gray-700 mb-6">
+                            Implemented a fine-tuned BERT model for classifying sentiment in financial reports. Created an interactive Plotly dashboard to visualize sentiment shifts over time.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/suhelansari123-cmd/project2-repo" target="_blank" class="text-sm font-semibold text-white bg-gray-700 hover:bg-cyan-600 py-2 px-4 rounded-lg transition duration-300">
+                                View Code (GitHub)
+                            </a>
+                            <a href="link-to-live-demo-or-kaggle-notebook.html" target="_blank" class="text-sm font-semibold text-cyan-500 border border-cyan-500 hover:bg-cyan-50 py-2 px-4 rounded-lg transition duration-300">
+                                Case Study/Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3: Deep Learning/Vision -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-xl border border-gray-200 transform hover:scale-[1.02] transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-cyan-500 mb-3">
+                            Image Recognition using CNNs
+                        </h3>
+                        <p class="text-sm text-gray-500 mb-4">
+                            #DeepLearning #ComputerVision #PyTorch #CNN
+                        </p>
+                        <p class="text-gray-700 mb-6">
+                            Built and trained a Convolutional Neural Network (VGG-16 architecture) on a custom dataset to classify images with 95% accuracy. Focus on transfer learning techniques.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/suhelansari123-cmd/project3-repo" target="_blank" class="text-sm font-semibold text-white bg-gray-700 hover:bg-cyan-600 py-2 px-4 rounded-lg transition duration-300">
+                                View Code (GitHub)
+                            </a>
+                            <a href="link-to-live-demo-or-kaggle-notebook.html" target="_blank" class="text-sm font-semibold text-cyan-500 border border-cyan-500 hover:bg-cyan-50 py-2 px-4 rounded-lg transition duration-300">
+                                Case Study/Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer (White Background) -->
+    <!-- Padding reduced from py-16 md:py-24 to py-12 md:py-16 -->
+    <footer id="contact" class="py-12 md:py-16 bg-white border-t border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                Ready to discuss your next data challenge?
+            </h2>
+            <div class="flex justify-center flex-wrap gap-x-8 gap-y-4 my-10">
+                <!-- LinkedIn (Link updated) -->
+                <a href="https://www.linkedin.com/in/suhel-ansari-bb7835339/" target="_blank" class="text-lg text-cyan-500 hover:text-cyan-600 transition duration-300 flex items-center gap-2">
+                    <i class="fab fa-linkedin text-xl"></i> LinkedIn (Suhel Ansari)
+                </a>
+                <!-- WhatsApp -->
+                <a href="https://wa.me/919557716913" target="_blank" class="text-lg text-cyan-500 hover:text-cyan-600 transition duration-300 flex items-center gap-2">
+                    <i class="fab fa-whatsapp text-xl"></i> WhatsApp (+91 9557716913)
+                </a>
+                <!-- Email -->
+                <a href="mailto:suhelansari95577@gmail.com" class="text-lg text-cyan-500 hover:text-cyan-600 transition duration-300 flex items-center gap-2">
+                    <i class="fas fa-envelope text-xl"></i> suhelansari95577@gmail.com
+                </a>
+                <!-- Instagram (Corrected ID and URL slug) -->
+                <a href="https://instagram.com/suhelsalafi" target="_blank" class="text-lg text-cyan-500 hover:text-cyan-600 transition duration-300 flex items-center gap-2">
+                    <i class="fab fa-instagram text-xl"></i> Instagram (Suhel Salafi)
+                </a>
+                <!-- New Blogger Link -->
+                <a href="https://www.blogger.com/blog/posts/4848763776789459053" target="_blank" class="text-lg text-cyan-500 hover:text-cyan-600 transition duration-300 flex items-center gap-2">
+                    <i class="fab fa-blogger-b text-xl"></i> Blogger (My Posts)
+                </a>
+                <!-- Resume Button (This remains in the footer) -->
+                <a href="Mohd_Suhel_Ansari_Resume.pdf" target="_blank" class="text-lg font-semibold text-cyan-500 border border-cyan-500 hover:bg-cyan-50 py-2 px-4 rounded-lg transition duration-300 flex items-center gap-2">
+                    <i class="fas fa-file-alt"></i> View Resume
+                </a>
+            </div>
+            
+            <hr class="border-gray-200 mb-6">
+            
+            <p class="text-gray-500 text-sm">
+                &copy; 2024 Mohd Suhel Ansari. Built with HTML and Tailwind CSS.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
